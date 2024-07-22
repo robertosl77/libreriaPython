@@ -1,0 +1,95 @@
+{
+    "plsql_blocks": [
+      {
+        "id": 1,
+        "description": "ACTIVA LA BARRERA",
+        "code": "BEGIN\n  IF NEXUS_GIS.INFORMACION_ENREMTAT_DIN.HANDLER_INI('CIRCUITO 103') THEN\n    DBMS_OUTPUT.PUT_LINE('ACTIVADO');\n  ELSE\n    DBMS_OUTPUT.PUT_LINE('DESACTIVADO');\n  END IF;\nEND;"
+      },
+      {
+        "id": 2,
+        "description": "LIBERA LA BARRERA",
+        "code": "DECLARE\nBEGIN\n  NEXUS_GIS.INFORMACION_ENREMTAT_DIN.HANDLER_FIN('CIRCUITO 103');\nEND;"
+      },
+      {
+        "id": 3,
+        "description": "EJECUTA INSERTA FORZADO MT",
+        "code": "DECLARE\nBEGIN\n  NEXUS_GIS.INFORMACION_ENREMTAT_DIN.INSERTA_DOCUMENTOS_DET;\nEND;"
+      },
+      {
+        "id": 4,
+        "description": "EJECUTA INSERTA PROGRAMADO MT",
+        "code": "DECLARE\nBEGIN\n  NEXUS_GIS.INFORMACION_ENREMTAT_DIN.INSERTA_DOCUMENTOS_DET_PRG;\nEND;"
+      },
+      {
+        "id": 5,
+        "description": "EJECUTA AGREGA_AFECTACIONES",
+        "code": "DECLARE\nBEGIN\n  NEXUS_GIS.INFORMACION_ENREMTAT_DIN.AGREGA_AFECTACIONES;\nEND;"
+      },
+      {
+        "id": 6,
+        "description": "EJECUTA MODIFICA DOCUMENTOS",
+        "code": "DECLARE\nBEGIN\n  NEXUS_GIS.INFORMACION_ENREMTAT_DIN.MODIFICA_DOCUMENTOS;\nEND;"
+      },
+      {
+        "id": 7,
+        "description": "EJECUTA CIRCUITO 103",
+        "code": "DECLARE\nBEGIN\n  DBMS_OUTPUT.PUT_LINE(\n    NEXUS_GIS.INFORMACION_ENREMTAT_DIN.INICIO\n  );\nEND;"
+      },
+      {
+        "id": 8,
+        "description": "EJECUTA SIMULAR FILTROS",
+        "code": "DECLARE\nBEGIN\n  DBMS_OUTPUT.PUT_LINE(\n    NEXUS_GIS.INFORMACION_ENREMTAT_DIN.SIMULAR_FILTROS\n  );\nEND;"
+      },
+      {
+        "id": 9,
+        "description": "BUSCA CT POR OBJECT ID",
+        "code": "BEGIN\n  DBMS_OUTPUT.PUT_LINE(\n    NEXUS_GIS.INFORMACION_ENREMTAT_DIN.CT_FROM_OBJECTID(61687443)\n  );\nEND;"
+      },
+      {
+        "id": 10,
+        "description": "BUSCA IDMS",
+        "code": "BEGIN\n  DBMS_OUTPUT.PUT_LINE(\n    NEXUS_GIS.INFORMACION_ENREMTAT_DIN.CONFIRMA_IDMS(9144871)\n  );\nEND;"
+      },
+      {
+        "id": 11,
+        "description": "BUSCA AFECTACIONES",
+        "code": "BEGIN\n  DBMS_OUTPUT.PUT_LINE(\n    NEXUS_GIS.INFORMACION_ENREMTAT_DIN.AFECTACIONES_BY_OBJECTID(9144871,62014133)\n  );\nEND;"
+      },
+      {
+        "id": 12,
+        "description": "FILTRO IDMS",
+        "code": "BEGIN\n  IF NEXUS_GIS.INFORMACION_ENREMTAT_DIN.GET_FILTRA_ITSMDELTA('INSERTA_DOCUMENTOS_DET', TRUE) THEN\n    DBMS_OUTPUT.PUT_LINE('A');\n  ELSE\n    DBMS_OUTPUT.PUT_LINE('B');\n  END IF;\nEND;"
+      },
+      {
+        "id": 13,
+        "description": "GET_FILTRO_DUPLICADOENCT",
+        "code": "BEGIN\n  DBMS_OUTPUT.PUT_LINE(\n    NEXUS_GIS.INFORMACION_ENREMTAT_DIN.GET_FILTRO_DUPLICADOENCT('AGREGA_AFECTACIONES', TRUE)\n  );\nEND;"
+      },
+      {
+        "id": 14,
+        "description": "SELECT * FROM NEXUS_GIS.PORTAL_CONDICIONES",
+        "code": "SELECT * FROM NEXUS_GIS.PORTAL_CONDICIONES;"
+      },
+      {
+        "id": 15,
+        "description": "SELECT * FROM NEXUS_GIS.PORTAL_CONDICIONES_SIMULADOS",
+        "code": "SELECT * FROM NEXUS_GIS.PORTAL_CONDICIONES_SIMULADOS;"
+      },
+      {
+        "id": 16,
+        "description": "SELECT * FROM NEXUS_GIS.WS_ENRE_LOG_CT",
+        "code": "SELECT * FROM NEXUS_GIS.WS_ENRE_LOG_CT;"
+      },
+      {
+        "id": 17,
+        "description": "SELECT * FROM NEXUS_GIS.TABLA_ENREMTAT_DET",
+        "code": "SELECT * FROM NEXUS_GIS.TABLA_ENREMTAT_DET;"
+      },
+      {
+        "id": 18,
+        "description": "SELECT WSENRE_CORTESAT",
+        "code": "SELECT * FROM NEXUS_GIS.WSENRE_CORTESAT WHERE NRO_DOCUMENTO='CERRADO' AND CANT_AFECTACIONES=0;\nSELECT ESTADO FROM NEXUS_GIS.WSENRE_CORTESAT WHERE ID_DOCUMENTO=9977400 AND CANT_AFECTACIONES=0;"
+      }
+    ]
+  }
+  
