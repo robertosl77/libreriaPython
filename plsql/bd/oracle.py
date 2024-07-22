@@ -1,6 +1,6 @@
 import cx_Oracle
 
-class OracleDB:
+class Oracle:
     def __init__(self):
         self.user = "NEXUS_GIS"
         self.password = "nexus_gis"

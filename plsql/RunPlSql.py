@@ -1,12 +1,12 @@
 import os
-from bd.oracle import OracleDB
+from bd.Oracle import Oracle
 from BuscaJson import BuscaJson
 
 
 class RunPlSql:
 
     def __init__(self):
-        self.db = OracleDB()
+        self.db = Oracle()
 
     def ejecutaPlSql(self):
         self.clear_console()
