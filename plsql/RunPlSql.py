@@ -10,8 +10,25 @@ class RunPlSql:
 
     def ejecutaPlSql(self):
         self.clear_console()
+        self.ejecutaBT()
+        print("")
+        self.ejecutaMT()
+        
+    def ejecutaMT(self):
         finder = BuscaJson('plsql.json')
         finder.find_by_id(7)
+        print(finder.getDescripcion())
+        self.db.connect()
+        output = self.db.execute_plsql(finder.getCode())
+        self.db.close()
+        
+        if output!=None:
+            for line in output:
+                print(line)
+
+    def ejecutaBT(self):
+        finder = BuscaJson('plsql.json')
+        finder.find_by_id(19)
         print(finder.getDescripcion())
         self.db.connect()
         output = self.db.execute_plsql(finder.getCode())

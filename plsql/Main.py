@@ -11,7 +11,7 @@ class Main:
         self.runner.ejecutaPlSql()
 
     def start_scheduler(self):
-        tiempo=1
+        tiempo=15
         schedule.every(tiempo).minutes.do(self.ejecuta_periodicamente)
         print(f"\nProxima ejecucion dentro de {tiempo} minutos.")
         while True:
