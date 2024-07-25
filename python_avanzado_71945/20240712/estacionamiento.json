@@ -1,0 +1,74 @@
+{
+    "QWE123": {
+        "hora de entrada": 8,
+        "tipo de vehiculo": "A",
+        "hora de salida": 99,
+        "cliente": "NO",
+        "Telefono": "",
+        "direccion": "",
+        "total estacionado": 0,
+        "total $": "",
+        "medio de pago": "",
+        "cod.operacion": ""
+    },
+    "ASD123": {
+        "hora de entrada": 9,
+        "tipo de vehiculo": "C",
+        "hora de salida": 23,
+        "cliente": "NO",
+        "Telefono": "",
+        "direccion": "",
+        "total estacionado": 14,
+        "total $": 56000,
+        "medio de pago": "TC",
+        "cod.operacion": "op:198017"
+    },
+    "ZXC123": {
+        "hora de entrada": 10,
+        "tipo de vehiculo": "V",
+        "hora de salida": 99,
+        "cliente": "NO",
+        "Telefono": "",
+        "direccion": "",
+        "total estacionado": 0,
+        "total $": "",
+        "medio de pago": "",
+        "cod.operacion": ""
+    },
+    "123QAZ": {
+        "hora de entrada": 12,
+        "tipo de vehiculo": "M",
+        "hora de salida": 99,
+        "cliente": "NO",
+        "Telefono": "",
+        "direccion": "",
+        "total estacionado": 0,
+        "total $": "",
+        "medio de pago": "",
+        "cod.operacion": ""
+    },
+    "123ASD": {
+        "hora de entrada": 8,
+        "tipo de vehiculo": "M",
+        "hora de salida": 99,
+        "cliente": "NO",
+        "Telefono": "",
+        "direccion": "",
+        "total estacionado": 0,
+        "total $": "",
+        "medio de pago": "",
+        "cod.operacion": ""
+    },
+    "ZZZZZZ": {
+        "hora de entrada": 6,
+        "tipo de vehiculo": "A",
+        "hora de salida": 99,
+        "cliente": "NO",
+        "Telefono": "",
+        "direccion": "",
+        "total estacionado": 14,
+        "total $": 28000,
+        "medio de pago": "ML",
+        "cod.operacion": "op:639004"
+    }
+}

@@ -1,0 +1,7 @@
+links de sqlite
+https://www.sqlite.org/download.html
+https://www.sqlite.org/2024/sqlite-dll-win-x86-3460000.zip
+https://www.sqlite.org/2024/sqlite-tools-win-x64-3460000.zip
+-------------------------------------------------------------
+https://sqlitebrowser.org/dl/
+https://download.sqlitebrowser.org/DB.Browser.for.SQLite-3.12.2-win64.msi
