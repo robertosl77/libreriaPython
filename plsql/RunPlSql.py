@@ -9,7 +9,7 @@ class RunPlSql:
         self.db = Oracle()
 
     def ejecutaPlSql(self):
-        self.clear_console()
+        # self.clear_console()
         self.ejecutaBT()
         print("")
         self.ejecutaMT()
