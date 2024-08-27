@@ -32,7 +32,7 @@
       },
       {
         "id": 7,
-        "description": "EJECUTA CIRCUITO 103",
+        "description": "CIRCUITO 103",
         "code": "DECLARE\nBEGIN\n  DBMS_OUTPUT.PUT_LINE(\n    NEXUS_GIS.INFORMACION_ENREMTAT_DIN.INICIO\n  );\nEND;"
       },
       {
@@ -92,7 +92,7 @@
       },
       {
         "id": 19,
-        "description": "INFORMACION_ENRE [BT]",
+        "description": "CIRCUITO 88",
         "code": "DECLARE\n  FILTRO NUMBER;\n  V_START_TIME NUMBER;\n  V_END_TIME NUMBER;\nBEGIN\n  V_START_TIME := DBMS_UTILITY.GET_TIME;\n  INFORMACION_ENRE_DIN.MODIFICA_DOCUMENTOS;\n  V_END_TIME := DBMS_UTILITY.GET_TIME;\n  DBMS_OUTPUT.PUT_LINE('Proceso Finalizado en ' || TRUNC((V_END_TIME - V_START_TIME) / 100) || ' segundos');\n  DBMS_OUTPUT.PUT_LINE('-*-');\n  V_START_TIME := DBMS_UTILITY.GET_TIME;\n  INFORMACION_ENRE_DIN.INSERTA_DOCUMENTOS;\n  V_END_TIME := DBMS_UTILITY.GET_TIME;\n  DBMS_OUTPUT.PUT_LINE('Proceso Finalizado en ' || TRUNC((V_END_TIME - V_START_TIME) / 100) || ' segundos');\n  DBMS_OUTPUT.PUT_LINE('-*-');\nEND;"
       }            
     ]

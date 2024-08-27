@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Unir Preguntas y Respuestas</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Unir Preguntas y Respuestas</h1>
+    <div id="dropzone">Arrastra el archivo Excel aquí o haz clic para seleccionar</div>
+    <input type="file" id="fileInput" style="display: none;">
+    <div id="progressGrid"></div>
+    <div id="indicators">
+        <div id="summary">
+            <p>Preguntas leídas: 0</p>
+            <p>Respuestas leídas: 0</p>
+        </div>
+        <div id="counter">
+            <p>Preguntas correctas: 0</p>
+            <p>Preguntas incorrectas: 0</p>
+            <p>Preguntas faltantes: 0</p>
+        </div>
+        <div id="percentages">
+            <p>% de avance: 0%</p>
+            <p>% de correctas: 0%</p>
+            <p>% de incorrectas: 0%</p>
+            <p>% de no respondidas: 0%</p>
+        </div>
+    </div>
+    <button id="checkBtn">Verificar</button>
+    <div class="container">
+        <div class="column" id="questions"></div>
+        <div class="column" id="answers"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

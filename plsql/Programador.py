@@ -25,7 +25,7 @@ class Programador:
 
     def __calcula_tiempo(self):
         self.tarea_ejecutada=True
-        self.tiempo.calcula_proximo(self.intervalo)
+        self.tiempo.calcula_proximo(self.intervalo) 
         return self.tiempo.devuelve_segundos_restantes()
 
     def __espera_evento(self):
